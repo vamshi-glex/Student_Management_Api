@@ -1,12 +1,15 @@
 from flask import Flask
 from extensions import   db
-from config import Config
+from config import config
+from routes.students import student_bp
 
 app = Flask(__name__)
 
-app.config.from_object(Config)  
+app.config.from_object(config)  
 
 db.init_app(app)    
+
+app.register_blueprint(student_bp, url_prefix='/students')
 
 from models import student
 with app.app_context():
