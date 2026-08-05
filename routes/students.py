@@ -50,6 +50,46 @@ def get_student(id):
     if not stud:
         return jsonify({"error": "Student not found"}), 404
     
-    
+
 
     return jsonify(stud.to_dict()), 200
+
+@student_bp.route("/<int:id>", methods=["PUT"])
+def update_student(id):
+    # Query student by ID
+    stud = student.query.get(id)
+
+    if not stud:
+        return jsonify({"error": "Student not found"}), 404
+
+    # Read JSON data from request
+    data = request.get_json()
+
+    # Update fields if provided
+    if "name" in data:
+        stud.name = data["name"]
+    if "age" in data:
+        stud.age = data["age"]
+    if "city" in data:
+        stud.city = data["city"]
+    if "course" in data:
+        stud.course = data["course"]
+
+    # Save changes to database
+    db.session.commit()
+
+    return jsonify(stud.to_dict()), 200
+
+@student_bp.route("/<int:id>", methods=["DELETE"])
+def delete_student(id):
+    # Query student by ID
+    stud = student.query.get(id)
+
+    if not stud:
+        return jsonify({"error": "Student not found"}), 404
+
+    # Delete student from database
+    db.session.delete(stud)
+    db.session.commit()
+
+    return jsonify({"message": "Student deleted successfully"}), 200

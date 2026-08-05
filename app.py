@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask # type: ignore
 from extensions import   db
 from config import config
 from routes.students import student_bp
