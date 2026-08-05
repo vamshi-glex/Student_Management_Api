@@ -5,9 +5,6 @@ from extensions import db
 student_bp = Blueprint("students", __name__)
 
 
- 
-
-
 @student_bp.route("/", methods=["POST"])
 def create_student():
     # Read JSON data from request
@@ -34,3 +31,25 @@ def create_student():
 
     # Return created student
     return jsonify(stud.to_dict()), 201
+
+@student_bp.route("/", methods=["GET"])
+def get_students():
+    # Query all students
+    students = student.query.all()
+
+    # Convert to list of dictionaries
+    students_list = [stud.to_dict() for stud in students]
+
+    return jsonify(students_list), 200
+
+@student_bp.route("/<int:id>", methods=["GET"])
+def get_student(id):
+    # Query student by ID
+    stud = student.query.get(id)
+
+    if not stud:
+        return jsonify({"error": "Student not found"}), 404
+    
+    
+
+    return jsonify(stud.to_dict()), 200
