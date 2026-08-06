@@ -93,3 +93,79 @@ def delete_student(id):
     db.session.commit()
 
     return jsonify({"message": "Student deleted successfully"}), 200
+
+#search
+@student_bp.route("/search", methods=["GET"])
+def search_students():
+    # Get query parameters
+    name = request.args.get("name")
+    age = request.args.get("age")
+    city = request.args.get("city")
+    course = request.args.get("course")
+
+    # Build query
+    query = student.query
+
+    if name:
+        query = query.filter(student.name.ilike(f"%{name}%"))
+    if age:
+        query = query.filter_by(age=int(age))
+    if city:
+        query = query.filter(student.city.ilike(f"%{city}%"))
+    if course:
+        query = query.filter(student.course.ilike(f"%{course}%"))
+
+    # Execute query
+    students = query.all()
+
+    # Convert to list of dictionaries
+    students_list = [stud.to_dict() for stud in students]
+
+    return jsonify(students_list), 200
+
+#sort
+@student_bp.route("/sort", methods=["GET"])
+def sort_students():
+    # Get query parameters
+    sort_by = request.args.get("sort_by", "id")
+    order = request.args.get("order", "asc")
+
+    # Validate sort_by field
+    if sort_by not in ["id", "name", "age", "city", "course"]:
+        return jsonify({"error": "Invalid sort_by field"}), 400
+
+    # Build query
+    query = student.query
+
+    if order == "desc":
+        query = query.order_by(getattr(student, sort_by).desc())
+    else:
+        query = query.order_by(getattr(student, sort_by).asc())
+
+    # Execute query
+    students = query.all()
+
+    # Convert to list of dictionaries
+    students_list = [stud.to_dict() for stud in students]
+
+    return jsonify(students_list), 200
+
+#pagination
+@student_bp.route("/paginate", methods=["GET"])
+def paginate_students():
+    # Get query parameters
+    page = request.args.get("page", 1, type=int)
+    per_page = request.args.get("per_page", 10, type=int)
+
+    # Query students with pagination
+    pagination = student.query.paginate(page=page, per_page=per_page, error_out=False)
+
+    # Convert to list of dictionaries
+    students_list = [stud.to_dict() for stud in pagination.items]
+
+    return jsonify({
+        "students": students_list,
+        "total": pagination.total,
+        "pages": pagination.pages,
+        "current_page": pagination.page
+    }), 200
