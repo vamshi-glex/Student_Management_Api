@@ -1,98 +1,52 @@
 from flask import Blueprint, jsonify, request
 from models import student 
 from extensions import db
+from services.student_service import create_student_service, get_students_service,get_student_service,update_student_service,delete_student_service
 
 student_bp = Blueprint("students", __name__)
 
-
+#posting data
 @student_bp.route("/", methods=["POST"])
-def create_student():
+def create_student_route():
+     
     # Read JSON data from request
     data = request.get_json()
 
-    # Required fields
-    required_fields = ["name", "age", "city", "course"]
-
-    # Validate request
-    if not data or not all(field in data for field in required_fields):
-        return jsonify({"error": "All fields are required"}), 400
-
-    # Create Student object
-    stud = student(
-        name=data["name"],
-        age=data["age"],
-        city=data["city"],
-        course=data["course"]
-    )
-
-    # Save to database
-    db.session.add(stud)
-    db.session.commit()
+    result=create_student_service(data)
 
     # Return created student
-    return jsonify(stud.to_dict()), 201
+    return jsonify(result), 201
 
+#getting data
 @student_bp.route("/", methods=["GET"])
 def get_students():
-    # Query all students
-    students = student.query.all()
+    students=get_students_service()
+    return jsonify(students), 200
 
-    # Convert to list of dictionaries
-    students_list = [stud.to_dict() for stud in students]
-
-    return jsonify(students_list), 200
-
+# getting data by id
 @student_bp.route("/<int:id>", methods=["GET"])
 def get_student(id):
-    # Query student by ID
-    stud = student.query.get(id)
+     result,status=get_student_service(id)
+     return jsonify(result), status
 
-    if not stud:
-        return jsonify({"error": "Student not found"}), 404
-    
-
-
-    return jsonify(stud.to_dict()), 200
 
 @student_bp.route("/<int:id>", methods=["PUT"])
 def update_student(id):
     # Query student by ID
-    stud = student.query.get(id)
+     
+    result,status=update_student_service(id,request.get_json())
 
-    if not stud:
-        return jsonify({"error": "Student not found"}), 404
+    return jsonify(result),status
 
-    # Read JSON data from request
-    data = request.get_json()
 
-    # Update fields if provided
-    if "name" in data:
-        stud.name = data["name"]
-    if "age" in data:
-        stud.age = data["age"]
-    if "city" in data:
-        stud.city = data["city"]
-    if "course" in data:
-        stud.course = data["course"]
-
-    # Save changes to database
-    db.session.commit()
-
-    return jsonify(stud.to_dict()), 200
 
 @student_bp.route("/<int:id>", methods=["DELETE"])
 def delete_student(id):
     # Query student by ID
-    stud = student.query.get(id)
+    result,status=delete_student_service(id)
+     
 
-    if not stud:
-        return jsonify({"error": "Student not found"}), 404
-
-    # Delete student from database
-    db.session.delete(stud)
-    db.session.commit()
-
-    return jsonify({"message": "Student deleted successfully"}), 200
+    return jsonify(result), status
 
 #search
 @student_bp.route("/search", methods=["GET"])
