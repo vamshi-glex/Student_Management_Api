@@ -1,0 +1,98 @@
+2026-08-11 19:36:25,772 - INFO - app - Student Management API started
+2026-08-11 19:36:25,793 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:36:25,801 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:36:28,771 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-11 19:36:29,101 - INFO - app - Student Management API started
+2026-08-11 19:36:29,128 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:36:29,136 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:38:27,766 - INFO - werkzeug - 127.0.0.1 - - [11/Aug/2026 19:38:27] "GET / HTTP/1.1" 200 -
+2026-08-11 19:38:56,253 - INFO - werkzeug - 127.0.0.1 - - [11/Aug/2026 19:38:56] "[32mPOST /students HTTP/1.1[0m" 308 -
+2026-08-11 19:38:56,278 - INFO - services.student_service - Student created successfully: 8
+2026-08-11 19:38:56,278 - INFO - werkzeug - 127.0.0.1 - - [11/Aug/2026 19:38:56] "[35m[1mPOST /students/ HTTP/1.1[0m" 201 -
+2026-08-11 19:40:52,158 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:52,159 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:52,338 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:52,369 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:53,154 - INFO - app - Student Management API started
+2026-08-11 19:40:53,192 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:40:53,201 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:40:56,094 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:56,486 - INFO - app - Student Management API started
+2026-08-11 19:40:56,507 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:40:56,513 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:40:57,923 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:58,058 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:40:58,756 - INFO - app - Student Management API started
+2026-08-11 19:40:58,777 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:40:58,784 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:41:02,669 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/utils/response.py', reloading
+2026-08-11 19:41:03,052 - INFO - app - Student Management API started
+2026-08-11 19:41:03,074 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:41:03,082 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:43:09,582 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:10,219 - INFO - app - Student Management API started
+2026-08-11 19:43:10,249 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:43:10,259 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:43:16,107 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:16,676 - INFO - app - Student Management API started
+2026-08-11 19:43:16,705 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:43:16,714 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:43:25,670 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:26,076 - INFO - app - Student Management API started
+2026-08-11 19:43:26,100 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:43:26,110 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:43:29,550 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:30,357 - INFO - app - Student Management API started
+2026-08-11 19:43:30,376 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:43:30,383 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:43:42,514 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:42,634 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:43,755 - INFO - app - Student Management API started
+2026-08-11 19:43:43,783 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:43:43,792 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:43:46,438 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:43:47,071 - INFO - app - Student Management API started
+2026-08-11 19:43:47,091 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:43:47,098 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:44:02,057 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:02,546 - INFO - app - Student Management API started
+2026-08-11 19:44:02,584 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:44:02,593 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:44:08,155 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:08,847 - INFO - app - Student Management API started
+2026-08-11 19:44:08,867 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:44:08,875 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:44:39,367 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:40,416 - INFO - app - Student Management API started
+2026-08-11 19:44:40,459 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:44:40,467 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:44:43,565 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:44,771 - INFO - app - Student Management API started
+2026-08-11 19:44:44,793 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:44:44,801 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:44:48,475 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:48,540 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:49,134 - INFO - app - Student Management API started
+2026-08-11 19:44:49,157 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:44:49,165 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:44:52,273 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-11 19:44:53,399 - INFO - app - Student Management API started
+2026-08-11 19:44:53,420 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:44:53,427 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:46:04,339 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-11 19:46:05,329 - INFO - app - Student Management API started
+2026-08-11 19:46:05,368 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:46:05,382 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:46:09,489 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-11 19:46:10,740 - INFO - app - Student Management API started
+2026-08-11 19:46:10,765 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:46:10,771 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:46:20,624 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-11 19:46:20,731 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-11 19:46:21,169 - INFO - app - Student Management API started
+2026-08-11 19:46:21,191 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:46:21,198 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-11 19:46:26,055 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-11 19:46:26,490 - INFO - app - Student Management API started
+2026-08-11 19:46:26,509 - WARNING - werkzeug -  * Debugger is active!
+2026-08-11 19:46:26,518 - INFO - werkzeug -  * Debugger PIN: 711-223-653

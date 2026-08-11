@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request
 from models import student 
 from extensions import db
+from utils.response import success_response, error_response
 from services.student_service import create_student_service, get_students_service,get_student_service,update_student_service,delete_student_service
 
 student_bp = Blueprint("students", __name__)
@@ -8,45 +9,76 @@ student_bp = Blueprint("students", __name__)
 #posting data
 @student_bp.route("/", methods=["POST"])
 def create_student_route():
-     
-    # Read JSON data from request
+
     data = request.get_json()
 
-    result=create_student_service(data)
+    result, status = create_student_service(data)
 
-    # Return created student
-    return jsonify(result), 201
+    if status != 201:
+        return error_response(result["error"], status)
+
+    return success_response(
+        "Student created successfully",
+        result,
+        201
+    )
 
 #getting data
 @student_bp.route("/", methods=["GET"])
 def get_students():
-    students=get_students_service()
-    return jsonify(students), 200
+
+    result, status = get_students_service()
+
+    return success_response(
+        "Students retrieved successfully",
+        result,
+        status
+    )
 
 # getting data by id
 @student_bp.route("/<int:id>", methods=["GET"])
 def get_student(id):
-     result,status=get_student_service(id)
-     return jsonify(result), status
+
+    result, status = get_student_service(id)
+
+    if status != 200:
+        return error_response(result["error"], status)
+
+    return success_response(
+        "Student retrieved successfully",
+        result,
+        200
+    )
 
 
 @student_bp.route("/<int:id>", methods=["PUT"])
 def update_student(id):
-    # Query student by ID
-     
-    result,status=update_student_service(id,request.get_json())
 
-    return jsonify(result),status
+    data = request.get_json()
+
+    result, status = update_student_service(id, data)
+
+    if status != 200:
+        return error_response(result["error"], status)
+
+    return success_response(
+        "Student updated successfully",
+        result,
+        200
+    )
 
 
 
 @student_bp.route("/<int:id>", methods=["DELETE"])
 def delete_student(id):
-    # Query student by ID
-    result,status=delete_student_service(id)
-     
 
-    return jsonify(result), status
+    result, status = delete_student_service(id)
+
+    return success_response(
+        "Student deleted successfully",
+        result,
+        status
+    )
 
 #search
 @student_bp.route("/search", methods=["GET"])

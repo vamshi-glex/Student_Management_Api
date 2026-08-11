@@ -1,78 +1,164 @@
+import logging
+
 from models import student
 from extensions import db
-#for creating a student
+from exceptions import StudentNotFoundException
+
+
+# Logger
+logger = logging.getLogger(__name__)
+
+
+# Create student
 def create_student_service(data):
-    # Required fields
+
     required_fields = ["name", "age", "city", "course"]
 
-    # Validate request
+    # Check required fields
     if not data or not all(field in data for field in required_fields):
         return {"error": "All fields are required"}, 400
 
-    # Create Student object
+    # Validate name
+    if not isinstance(data["name"], str):
+        return {"error": "Name must be a string"}, 400
+
+    if not data["name"].strip():
+        return {"error": "Name cannot be empty"}, 400
+
+    # Validate age
+    if not isinstance(data["age"], int):
+        return {"error": "Age must be an integer"}, 400
+
+    if data["age"] <= 0:
+        return {"error": "Age must be greater than 0"}, 400
+
+    # Validate city
+    if not isinstance(data["city"], str):
+        return {"error": "City must be a string"}, 400
+
+    if not data["city"].strip():
+        return {"error": "City cannot be empty"}, 400
+
+    # Validate course
+    if not isinstance(data["course"], str):
+        return {"error": "Course must be a string"}, 400
+
+    if not data["course"].strip():
+        return {"error": "Course cannot be empty"}, 400
+
+    # Create student
     stud = student(
-        name=data["name"],
+        name=data["name"].strip(),
         age=data["age"],
-        city=data["city"],
-        course=data["course"]
+        city=data["city"].strip(),
+        course=data["course"].strip()
     )
 
     # Save to database
     db.session.add(stud)
     db.session.commit()
 
-    # Return created student
+    # Log creation
+    logger.info(f"Student created successfully: {stud.id}")
+
     return stud.to_dict(), 201
-#for getting all students
+
+
+# Get all students
 def get_students_service():
-    # Query all students
+
     students = student.query.all()
 
-    # Convert to list of dictionaries
     students_list = [stud.to_dict() for stud in students]
 
     return students_list, 200
 
+
+# Get student by ID
 def get_student_service(id):
-    # Query student by ID
-    stud = student.query.get(id)
+
+    stud = db.session.get(student, id)
 
     if not stud:
-        return {"error": "Student not found"}, 404
+        raise StudentNotFoundException()
 
     return stud.to_dict(), 200
 
+
+# Update student
 def update_student_service(id, data):
-    # Query student by ID
-    stud = student.query.get(id)
+
+    stud = db.session.get(student, id)
 
     if not stud:
-        return {"error": "Student not found"}, 404
+        raise StudentNotFoundException()
 
-    # Update fields if provided
+    # Validate and update name
     if "name" in data:
-        stud.name = data["name"]
-    if "age" in data:
-        stud.age = data["age"]
-    if "city" in data:
-        stud.city = data["city"]
-    if "course" in data:
-        stud.course = data["course"]
 
-    # Save changes to database
+        if not isinstance(data["name"], str):
+            return {"error": "Name must be a string"}, 400
+
+        if not data["name"].strip():
+            return {"error": "Name cannot be empty"}, 400
+
+        stud.name = data["name"].strip()
+
+    # Validate and update age
+    if "age" in data:
+
+        if not isinstance(data["age"], int):
+            return {"error": "Age must be an integer"}, 400
+
+        if data["age"] <= 0:
+            return {"error": "Age must be greater than 0"}, 400
+
+        stud.age = data["age"]
+
+    # Validate and update city
+    if "city" in data:
+
+        if not isinstance(data["city"], str):
+            return {"error": "City must be a string"}, 400
+
+        if not data["city"].strip():
+            return {"error": "City cannot be empty"}, 400
+
+        stud.city = data["city"].strip()
+
+    # Validate and update course
+    if "course" in data:
+
+        if not isinstance(data["course"], str):
+            return {"error": "Course must be a string"}, 400
+
+        if not data["course"].strip():
+            return {"error": "Course cannot be empty"}, 400
+
+        stud.course = data["course"].strip()
+
+    # Save changes
     db.session.commit()
 
+    # Log update
+    logger.info(f"Student updated successfully: {stud.id}")
+
     return stud.to_dict(), 200
 
+
+# Delete student
 def delete_student_service(id):
-    # Query student by ID
-    stud = student.query.get(id)
+
+    stud = db.session.get(student, id)
 
     if not stud:
-        return {"error": "Student not found"}, 404
+        raise StudentNotFoundException()
 
-    # Delete student from database
+    # Delete student
     db.session.delete(stud)
     db.session.commit()
+
+    # Log deletion
+    logger.info(f"Student deleted successfully: {id}")
 
     return {"message": "Student deleted successfully"}, 200
