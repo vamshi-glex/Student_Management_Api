@@ -1,5 +1,16 @@
 import os
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 class config:
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'instance','students.db')
+
+    SECRET_KEY = os.getenv("SECRET_KEY", "default-secret-key")
+
+    SQLALCHEMY_DATABASE_URI = "sqlite:///students.db"
+
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    DEBUG = os.getenv("DEBUG", "False") == "True"
