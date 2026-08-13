@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request
 from models import student 
+from flask_jwt_extended import jwt_required
 from extensions import db
 from utils.response import success_response, error_response
 from services.student_service import create_student_service, get_students_service,get_student_service,update_student_service,delete_student_service
@@ -8,6 +9,7 @@ student_bp = Blueprint("students", __name__)
 
 #posting data
 @student_bp.route("/", methods=["POST"])
+@jwt_required()
 def create_student_route():
 
     data = request.get_json()
@@ -25,6 +27,7 @@ def create_student_route():
 
 #getting data
 @student_bp.route("/", methods=["GET"])
+@jwt_required()
 def get_students():
 
     result, status = get_students_service()
@@ -37,6 +40,7 @@ def get_students():
 
 # getting data by id
 @student_bp.route("/<int:id>", methods=["GET"])
+@jwt_required()
 def get_student(id):
 
     result, status = get_student_service(id)
@@ -52,6 +56,7 @@ def get_student(id):
 
 
 @student_bp.route("/<int:id>", methods=["PUT"])
+@jwt_required()
 def update_student(id):
 
     data = request.get_json()
@@ -70,6 +75,7 @@ def update_student(id):
 
 
 @student_bp.route("/<int:id>", methods=["DELETE"])
+@jwt_required()
 def delete_student(id):
 
     result, status = delete_student_service(id)
@@ -82,6 +88,7 @@ def delete_student(id):
 
 #search
 @student_bp.route("/search", methods=["GET"])
+@jwt_required()
 def search_students():
 
     name = request.args.get("name")
@@ -123,6 +130,7 @@ def search_students():
     )
 #sort
 @student_bp.route("/sort", methods=["GET"])
+@jwt_required()
 def sort_students():
 
     sort_by = request.args.get("sort_by", "id")
@@ -160,6 +168,7 @@ def sort_students():
 
 #pagination
 @student_bp.route("/paginate", methods=["GET"])
+@jwt_required()
 def paginate_students():
 
     page = request.args.get(

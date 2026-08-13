@@ -99,6 +99,7 @@ fastjsonschema @ file:///Users/builder/cbouss/buildout/croot/python-fastjsonsche
 filelock @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_f6dmuewahq/croot/filelock_1744281400993/work
 flake8 @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/flake8_1728594304916/work
 Flask @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_fabivvom5o/croot/flask_1737454311468/work
+Flask-JWT-Extended==4.7.4
 Flask-SQLAlchemy==3.1.1
 Flask-WTF==1.3.0
 fonttools @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ce1jt_55vl/croot/fonttools_1737039388732/work
@@ -257,7 +258,7 @@ pyerfa @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_32y
 pyflakes @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/pyflakes_1728593126560/work
 PyGithub @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/pygithub_1731727162065/work
 Pygments @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f0f10r98sf/croot/pygments_1744664126614/work
-PyJWT @ file:///Users/builder/cbouss/buildout/croot/pyjwt_1739484683708/work
+PyJWT==2.13.0
 pylint @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ebomjbe652/croot/pylint_1743709210020/work
 pylint-venv @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/pylint-venv_1728599255979/work
 pyls-spyder==0.4.0

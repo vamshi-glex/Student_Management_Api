@@ -5,8 +5,16 @@ from routes.students import student_bp
 from exceptions import StudentNotFoundException
 import logging
 import os
+from routes.auth import auth_bp
+from flask_jwt_extended import JWTManager
 
 app = Flask(__name__)
+
+app.config.from_object(config)
+
+jwt = JWTManager(app)
+
+db.init_app(app)
 
 os.makedirs("logs", exist_ok=True)
 
@@ -18,11 +26,12 @@ logging.basicConfig(
 
 app.logger.info("Student Management API started")
 
-app.config.from_object(config)  
+ 
 
-db.init_app(app)    
+   
 
 app.register_blueprint(student_bp, url_prefix='/students')
+app.register_blueprint(auth_bp)
 
 
 @app.errorhandler(StudentNotFoundException)
@@ -57,4 +66,4 @@ def home():
     }
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8000)

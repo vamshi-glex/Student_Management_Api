@@ -1,4 +1,41 @@
 from app import app
+import pytest
+
+from models import User
+from extensions import db
+from werkzeug.security import generate_password_hash
+from flask_jwt_extended import create_access_token
+
+@pytest.fixture
+def client():
+
+    app.config["TESTING"] = True
+
+    with app.app_context():
+
+        db.drop_all()
+        db.create_all()
+
+        user = User(
+            username="testuser",
+            email="test@example.com",
+            password_hash=generate_password_hash("password123")
+        )
+
+        db.session.add(user)
+        db.session.commit()
+
+        token = create_access_token(
+            identity=str(user.id)
+        )
+
+    with app.test_client() as client:
+
+        client.environ_base["HTTP_AUTHORIZATION"] = (
+            f"Bearer {token}"
+        )
+
+        yield client
 
 
 def test_get_students(client):

@@ -196,3 +196,337 @@
 2026-08-12 20:34:07,905 - INFO - services.student_service - Student created successfully: 3
 2026-08-12 20:34:07,906 - INFO - services.student_service - Student created successfully: 4
 2026-08-12 20:34:07,907 - INFO - services.student_service - Student created successfully: 5
+2026-08-13 16:28:16,679 - INFO - app - Student Management API started
+2026-08-13 16:28:16,749 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-13 16:28:16,749 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:28:16,757 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:28:16,912 - INFO - app - Student Management API started
+2026-08-13 16:28:16,930 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:28:16,938 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:29:42,650 - INFO - app - Student Management API started
+2026-08-13 16:29:42,703 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-13 16:29:42,703 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:29:42,710 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:29:42,861 - INFO - app - Student Management API started
+2026-08-13 16:29:42,880 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:29:42,886 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:30:08,769 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-13 16:30:09,106 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:30:09,331 - INFO - app - Student Management API started
+2026-08-13 16:30:09,356 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:30:09,366 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:30:13,255 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/app.py', reloading
+2026-08-13 16:30:13,461 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:30:13,625 - INFO - app - Student Management API started
+2026-08-13 16:30:13,650 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:30:13,656 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:30:19,188 - INFO - app - Student Management API started
+2026-08-13 16:30:19,214 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-08-13 16:30:19,214 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:30:19,218 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:30:19,368 - INFO - app - Student Management API started
+2026-08-13 16:30:19,386 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:30:19,391 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:30:52,910 - INFO - app - Student Management API started
+2026-08-13 16:30:52,941 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-08-13 16:30:52,941 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:30:52,946 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:30:53,093 - INFO - app - Student Management API started
+2026-08-13 16:30:53,112 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:30:53,117 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:31:33,438 - INFO - app - Student Management API started
+2026-08-13 16:31:33,472 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-08-13 16:31:33,472 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:31:33,477 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:31:33,640 - INFO - app - Student Management API started
+2026-08-13 16:31:33,660 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:31:33,669 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:32:57,351 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:32:57] "GET /?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-08-13 16:32:57,413 - ERROR - app - Unexpected error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/anaconda3/lib/python3.13/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/opt/anaconda3/lib/python3.13/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-08-13 16:32:57,420 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:32:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-08-13 16:33:42,636 - INFO - app - Student Management API started
+2026-08-13 16:33:42,689 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-08-13 16:33:42,689 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:33:42,700 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:33:42,850 - INFO - app - Student Management API started
+2026-08-13 16:33:42,870 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:33:42,879 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:33:49,160 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:33:49] "GET / HTTP/1.1" 200 -
+2026-08-13 16:34:37,612 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:34:37] "[35m[1mPOST /auth/register HTTP/1.1[0m" 201 -
+2026-08-13 16:34:49,036 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:34:49] "[31m[1mPOST /auth/register HTTP/1.1[0m" 409 -
+2026-08-13 16:36:09,130 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/services/auth_service.py', reloading
+2026-08-13 16:36:09,772 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:36:10,091 - INFO - app - Student Management API started
+2026-08-13 16:36:10,126 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:36:10,134 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:36:14,068 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/services/auth_service.py', reloading
+2026-08-13 16:36:14,249 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:36:14,414 - INFO - app - Student Management API started
+2026-08-13 16:36:14,435 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:36:14,492 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:36:24,050 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/services/auth_service.py', reloading
+2026-08-13 16:36:24,285 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/services/auth_service.py', reloading
+2026-08-13 16:36:24,702 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:36:24,938 - INFO - app - Student Management API started
+2026-08-13 16:36:24,962 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:36:24,969 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:36:27,886 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/services/auth_service.py', reloading
+2026-08-13 16:36:28,075 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:36:28,226 - INFO - app - Student Management API started
+2026-08-13 16:36:28,246 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:36:28,250 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:37:04,067 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/auth.py', reloading
+2026-08-13 16:37:04,533 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:37:04,867 - INFO - app - Student Management API started
+2026-08-13 16:37:04,896 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:37:04,902 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:37:08,374 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/auth.py', reloading
+2026-08-13 16:37:08,996 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:37:09,153 - INFO - app - Student Management API started
+2026-08-13 16:37:09,174 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:37:09,180 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:37:12,901 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/auth.py', reloading
+2026-08-13 16:37:13,288 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:37:13,458 - INFO - app - Student Management API started
+2026-08-13 16:37:13,480 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:37:13,485 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:37:16,730 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/auth.py', reloading
+2026-08-13 16:37:17,631 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:37:17,782 - INFO - app - Student Management API started
+2026-08-13 16:37:17,802 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:37:17,806 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:37:29,548 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:37:29] "POST /auth/login HTTP/1.1" 200 -
+2026-08-13 16:37:38,161 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:37:38] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+2026-08-13 16:38:40,721 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/algorithms.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jwt.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/warnings.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/__init__.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/types.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/jwk_set_cache.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/utils.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/exceptions.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jwk.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/jwks_client.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jws.py', reloading
+2026-08-13 16:38:40,722 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/help.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/__init__.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/__init__.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/algorithms.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/algorithms.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jwk.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jwk.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jws.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jws.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jwt.py', reloading
+2026-08-13 16:38:40,723 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/api_jwt.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/exceptions.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/exceptions.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/help.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/help.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/jwk_set_cache.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/jwk_set_cache.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/jwks_client.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/jwks_client.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/types.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/types.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/utils.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/utils.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/warnings.py', reloading
+2026-08-13 16:38:40,724 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/jwt/warnings.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/algorithms.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/api_jwt.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/warnings.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/__init__.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/types.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/jwk_set_cache.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/utils.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/exceptions.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/api_jwk.py', reloading
+2026-08-13 16:38:40,732 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/jwks_client.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/api_jws.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/~wt/help.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/__init__.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/__init__.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/config.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/config.py', reloading
+2026-08-13 16:38:40,733 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/default_callbacks.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/default_callbacks.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/exceptions.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/exceptions.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/internal_utils.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/internal_utils.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/jwt_manager.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/jwt_manager.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/tokens.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/tokens.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/typing.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/typing.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/utils.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/utils.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/view_decorators.py', reloading
+2026-08-13 16:38:40,734 - INFO - werkzeug -  * Detected change in '/opt/anaconda3/lib/python3.13/site-packages/flask_jwt_extended/view_decorators.py', reloading
+2026-08-13 16:38:41,311 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:38:41,534 - INFO - app - Student Management API started
+2026-08-13 16:38:41,563 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:38:41,568 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:39:46,904 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/config.py', reloading
+2026-08-13 16:39:46,995 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:39:47,357 - INFO - app - Student Management API started
+2026-08-13 16:45:45,199 - INFO - app - Student Management API started
+2026-08-13 16:45:45,244 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-08-13 16:45:45,245 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2026-08-13 16:45:45,255 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:45:45,429 - INFO - app - Student Management API started
+2026-08-13 16:45:45,443 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:45:45,450 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:46:07,651 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:46:07] "POST /auth/login HTTP/1.1" 200 -
+2026-08-13 16:47:14,666 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:47:15,045 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:47:15,359 - INFO - app - Student Management API started
+2026-08-13 16:47:15,384 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:47:15,391 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:47:20,669 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:47:21,520 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:47:21,692 - INFO - app - Student Management API started
+2026-08-13 16:47:21,708 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:47:21,715 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:47:46,872 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:47:46,931 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:47:47,178 - INFO - app - Student Management API started
+2026-08-13 16:47:47,196 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:47:47,206 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:47:53,085 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:47:53,340 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:47:53,552 - INFO - app - Student Management API started
+2026-08-13 16:47:53,573 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:47:53,584 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:48:09,184 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:48:09,215 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:48:09,742 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:48:09,995 - INFO - app - Student Management API started
+2026-08-13 16:48:10,014 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:48:10,024 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:48:11,520 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:48:11] "[31m[1mGET /students/ HTTP/1.1[0m" 401 -
+2026-08-13 16:48:11,820 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:48:12,120 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:48:12,293 - INFO - app - Student Management API started
+2026-08-13 16:48:12,310 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:48:12,319 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:48:32,252 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:48:32] "POST /auth/login HTTP/1.1" 200 -
+2026-08-13 16:49:31,148 - INFO - werkzeug - 127.0.0.1 - - [13/Aug/2026 16:49:31] "GET /students/ HTTP/1.1" 200 -
+2026-08-13 16:50:48,926 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:50:49,279 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:50:49,680 - INFO - app - Student Management API started
+2026-08-13 16:50:49,705 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:50:49,713 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:50:54,758 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/routes/students.py', reloading
+2026-08-13 16:50:54,855 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:50:55,103 - INFO - app - Student Management API started
+2026-08-13 16:50:55,124 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:50:55,132 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:51:25,727 - INFO - app - Student Management API started
+2026-08-13 16:52:39,597 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/test_students.py', reloading
+2026-08-13 16:52:39,795 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:52:40,234 - INFO - app - Student Management API started
+2026-08-13 16:52:40,265 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:52:40,275 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:52:48,442 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/test_students.py', reloading
+2026-08-13 16:52:49,527 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:52:49,784 - INFO - app - Student Management API started
+2026-08-13 16:52:49,804 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:52:49,810 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:54:06,868 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/conftest.py', reloading
+2026-08-13 16:54:07,395 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:54:07,739 - INFO - app - Student Management API started
+2026-08-13 16:54:07,760 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:54:07,770 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:54:13,546 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/conftest.py', reloading
+2026-08-13 16:54:13,918 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:54:14,187 - INFO - app - Student Management API started
+2026-08-13 16:54:14,205 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:54:14,213 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:54:36,598 - INFO - app - Student Management API started
+2026-08-13 16:54:49,064 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/conftest.py', reloading
+2026-08-13 16:54:49,518 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:54:49,762 - INFO - app - Student Management API started
+2026-08-13 16:54:49,785 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:54:49,793 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:54:51,754 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/conftest.py', reloading
+2026-08-13 16:54:51,889 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:54:52,063 - INFO - app - Student Management API started
+2026-08-13 16:54:52,079 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:54:52,088 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:55:33,727 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/test_students.py', reloading
+2026-08-13 16:55:34,419 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:55:34,779 - INFO - app - Student Management API started
+2026-08-13 16:55:34,813 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:55:34,823 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:55:38,246 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/test_students.py', reloading
+2026-08-13 16:55:38,923 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:55:39,112 - INFO - app - Student Management API started
+2026-08-13 16:55:39,128 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:55:39,132 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:55:39,225 - INFO - app - Student Management API started
+2026-08-13 16:56:21,800 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/test_students.py', reloading
+2026-08-13 16:56:22,509 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:56:22,824 - INFO - app - Student Management API started
+2026-08-13 16:56:22,844 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:56:22,852 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:56:25,568 - INFO - app - Student Management API started
+2026-08-13 16:56:25,712 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:25,758 - INFO - werkzeug -  * Detected change in '/Users/gunugantivamshi/Desktop/ Student_Management_Api/tests/test_students.py', reloading
+2026-08-13 16:56:25,768 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:25,882 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:25,883 - INFO - services.student_service - Student updated successfully: 1
+2026-08-13 16:56:25,944 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:25,945 - INFO - services.student_service - Student deleted successfully: 1
+2026-08-13 16:56:25,954 - INFO - werkzeug -  * Restarting with watchdog (fsevents)
+2026-08-13 16:56:26,183 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:26,183 - INFO - app - Student Management API started
+2026-08-13 16:56:26,184 - INFO - services.student_service - Student created successfully: 2
+2026-08-13 16:56:26,207 - WARNING - werkzeug -  * Debugger is active!
+2026-08-13 16:56:26,213 - INFO - werkzeug -  * Debugger PIN: 711-223-653
+2026-08-13 16:56:26,260 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:26,261 - INFO - services.student_service - Student created successfully: 2
+2026-08-13 16:56:26,315 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:56:26,316 - INFO - services.student_service - Student created successfully: 2
+2026-08-13 16:56:26,317 - INFO - services.student_service - Student created successfully: 3
+2026-08-13 16:56:26,317 - INFO - services.student_service - Student created successfully: 4
+2026-08-13 16:56:26,318 - INFO - services.student_service - Student created successfully: 5
+2026-08-13 16:58:00,896 - INFO - app - Student Management API started
+2026-08-13 16:58:01,025 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,076 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,177 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,180 - INFO - services.student_service - Student updated successfully: 1
+2026-08-13 16:58:01,229 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,230 - INFO - services.student_service - Student deleted successfully: 1
+2026-08-13 16:58:01,427 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,428 - INFO - services.student_service - Student created successfully: 2
+2026-08-13 16:58:01,481 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,482 - INFO - services.student_service - Student created successfully: 2
+2026-08-13 16:58:01,533 - INFO - services.student_service - Student created successfully: 1
+2026-08-13 16:58:01,534 - INFO - services.student_service - Student created successfully: 2
+2026-08-13 16:58:01,535 - INFO - services.student_service - Student created successfully: 3
+2026-08-13 16:58:01,536 - INFO - services.student_service - Student created successfully: 4
+2026-08-13 16:58:01,537 - INFO - services.student_service - Student created successfully: 5
